@@ -1,0 +1,15 @@
+<div class="fdb">
+	<div  #myDiv>
+		<span class="fdb-message" *ngIf="!isLoading">{{ message$ | async }}</span>
+		<span class="fdb-spinner" *ngIf="isLoading"></span>
+	</div>
+</div>
+
+<!--
+    <div class="fdb" *ngIf="ng-show="isActive">
+	<div class="fdb-inner" ng-class="feedbackClass" ng-click="!isLoading && dismiss()">
+		<span class="fdb-message" ng-if="!isLoading">{{ message }}</span>
+		<span class="fdb-spinner" ng-if="isLoading"></span>
+	</div>
+</div>
+-->
